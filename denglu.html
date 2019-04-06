@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>denglu.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+	<style type="text/css">
+				#div1{
+					margin:230px;
+					margin-top:400px;
+					text-align: center;
+					
+				}
+				#div1 img{
+					width:500px;
+					height:500px;
+				}
+	</style>
+	<script type="text/javascript">
+			function text(){
+				if(document.getElementById("name").value=='张嘉森'){
+					location.href="shouye.html";
+				}
+			}
+	</script>
+  </head>
+  
+  <body>
+  <div id="div1">
+			<p style="font-size: 70px;">用户登录</p>
+			<img alt="" src="img/20190406234940.jpg">
+			<div style="margin-top: 20px;height: 50px;">
+			<p>该用户的真实名字</p>
+			<p><span style="font-size: 50px;">name:</span><input type="text" id="name" placeholder="名字" style="height: 50px;width: 300px;"/></p>
+			<br/><br/>
+			<input type="button" onclick="text()" value="登录" style="width: 200px;height: 50px;background-color: #00FFFF;border: 10px solid #A6FFFF;">
+			</div>
+		</div>
+  </body>
+</html>
