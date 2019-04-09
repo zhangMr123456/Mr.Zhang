@@ -11,7 +11,6 @@
 					margin:230px;
 					margin-top:400px;
 					text-align: center;
-					
 				}
 				#div1 img{
 					width:500px;
@@ -24,12 +23,26 @@
 					location.href="shouye.html";
 				}
 			}
+			var i=2;
+			function text1(){
+				if(i%2==0){
+					var audio=document.getElementById("audioMusic");
+					document.getElementById("img").src="img/jing.png";
+					audio.pause();
+					i++;
+				}else{
+					var audio=document.getElementById("audioMusic");
+					document.getElementById("img").src="img/sheng.png";
+					audio.play();
+					i++;
+				}
+			}
 	</script>
-	<link rel="shortcut icon" href="image/favicon.ico">
   </head>
   
   <body>
-  <audio  autoplay="autoplay" loop="loop" src="music/New Soul.mp3" ></audio>
+  <audio id="audioMusic" autoplay="autoplay" loop="loop" src="music/New Soul.mp3" ></audio>
+  <img alt="" src="img/sheng.png" onclick="text1()" id="img" style="width: 100px;height: 100px;">
   <div id="div1">
 			<p style="font-size: 70px;">用户登录</p>
 			<img alt="" src="img/20190406234940.jpg">
