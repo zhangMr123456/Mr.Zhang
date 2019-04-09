@@ -10,11 +10,27 @@
 			body{
 			}
 		</style>
-		<link rel="shortcut icon" href="image/favicon.ico">
+		<script type="text/javascript">
+			var i=2;
+			function text1(){
+				if(i%2==0){
+					var audio=document.getElementById("audioMusic");
+					document.getElementById("img").src="img/jing.png";
+					audio.pause();
+					i++;
+				}else{
+					var audio=document.getElementById("audioMusic");
+					document.getElementById("img").src="img/sheng.png";
+					audio.play();
+					i++;
+				}
+			}
+		</script>
 	</head>
 	<body style="background-image: url('img/527a082b52176.jpg')">
+	<img alt="" src="img/sheng.png" onclick="text1()" id="img" style="width: 100px;height: 100px;">
 	<p>生活需要激情啊!难道不是吗?你可以尝试打开你的音量</p>
-	 <audio  autoplay="autoplay" loop="loop" src="music/1332807375.mp3" ></audio>
+	 <audio id="audioMusic" autoplay="autoplay" loop="loop" src="music/1332807375.mp3" ></audio>
 		<div id="div2">
 			<div>
 			<h1>努力完成我的梦想!我相信我能坚持到底.没有理由!</h1>
