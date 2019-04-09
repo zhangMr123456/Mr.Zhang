@@ -5,7 +5,6 @@
     <meta name="keywords" content="keyword1,keyword2,keyword3">
     <meta name="description" content="this is my page">
     <meta name="content-type" content="text/html; charset=UTF-8">
-	<link rel="shortcut icon" href="image/favicon.ico">
 	<style type="text/css">
 	#div{
 		margin: 200px;
@@ -14,10 +13,27 @@
 	text-decoration:none;
 	}
 	</style>
+	<script type="text/javascript">
+		var i=2;
+		function text(){
+			if(i%2==0){
+				var audio=document.getElementById("audioMusic");
+				document.getElementById("img").src="img/jing.png";
+				audio.pause();
+				i++;
+			}else{
+				var audio=document.getElementById("audioMusic");
+				document.getElementById("img").src="img/sheng.png";
+				audio.play();
+				i++;
+			}
+		}
+	</script>
   </head>
   <body style="background-image: url('img/th.jpg'); background-repeat:no-repeat;background-size:100% 1800px;">
-	<p style="font-size: 50px;">开心每一天!你可以尝试打开你的音量</p>
- 	<audio  autoplay="autoplay" loop="loop" src="music/姜鹏Calm,很美味 - Lover Boy 88 (cover：Phum Viphurit&Higher Brothers).mp3" ></audio>
+  <img alt="" src="img/sheng.png" onclick="text()" id="img" style="width: 100px;height: 100px;">
+	    <p style="font-size: 50px;">开心每一天!你可以尝试打开你的音量</p>
+ 		<audio id="audioMusic" autoplay="autoplay" loop="loop" src="music/姜鹏Calm,很美味 - Lover Boy 88 (cover：Phum Viphurit&Higher Brothers).mp3" ></audio>
     	<div id="div">
 			<p style="font-size: 50px;">这些视频当然是我这段时间比较痴迷啦!(点击图标即可)</p>
 			<a href="wodeshipin.html"><img alt="" src="http://img4.peiyinxiu.com/web/images/dubbing_logo.png?t=2" style="width: 250px;height: 85px;"></a><br/><br/>
